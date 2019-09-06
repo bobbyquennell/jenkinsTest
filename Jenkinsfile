@@ -12,4 +12,13 @@ pipeline {
       }
     }
   }
+  post {
+    successful {
+      slackSend(
+        color: 'danger',
+        message: "*${env.JOB_NAME}* build ${env.BUILD_NUMBER} failed\n\nMore details: ${env.BUILD_URL}",
+        channel: '#jenkins'
+      )
+    }
+  }
 }
