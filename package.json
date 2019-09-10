@@ -1,0 +1,7 @@
+{
+  "name": "jenkinsTest",
+  "version": "1.0.0",
+  "description": "jenkins test project",
+  "main": "index.js",
+  "license": "MIT"
+}
